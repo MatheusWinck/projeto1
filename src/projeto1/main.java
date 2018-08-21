@@ -1,4 +1,4 @@
-package vendas;
+package projeto1;
 
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
@@ -97,6 +97,7 @@ public class main {
 					unid = Integer.parseInt(JOptionPane.showInputDialog("Quantidade: \n"));
 					if(parafusos>=unid){
 						vendas.add("Parafusos "+unid);
+						parafusos -= unid;
 						din += 0.25*unid;
 						dinv += 0.25*unid;
 					}else{
@@ -106,6 +107,7 @@ public class main {
 					unid = Integer.parseInt(JOptionPane.showInputDialog("Quantidade: \n"));
 					if(roscas>=unid){
 						vendas.add("Roscas "+unid);	
+						roscas -= unid;
 						din += 0.25*unid;
 						dinv += 0.25*unid;
 					}else{
@@ -115,6 +117,7 @@ public class main {
 					unid = Integer.parseInt(JOptionPane.showInputDialog("Quantidade: \n"));
 					if(buchas>=unid){
 						vendas.add("Buchas "+unid);	
+						buchas -= unid;
 						din += 0.15*unid;
 						dinv += 0.15*unid;
 					}else{
@@ -124,6 +127,7 @@ public class main {
 					unid = Integer.parseInt(JOptionPane.showInputDialog("Quantidade: \n"));
 					if(chave_fenda>=unid){
 						vendas.add("Chaves de fenda "+unid);	
+						chave_fenda -= unid;
 						din += 5*unid;
 						dinv += 5*unid;
 					}else{
@@ -133,6 +137,7 @@ public class main {
 					unid = Integer.parseInt(JOptionPane.showInputDialog("Quantidade: \n"));
 					if(chave_philips>=unid){
 						vendas.add("Chaves philips "+unid);	
+						chave_philips -= unid;
 						din += 5*unid;
 						dinv += 5*unid;
 					}else{
@@ -142,6 +147,7 @@ public class main {
 					unid = Integer.parseInt(JOptionPane.showInputDialog("Quantidade: \n"));
 					if(cabo>=unid){
 						vendas.add("Cabo(metro) "+unid);
+						cabo -= unid;
 						din += 1*unid;
 						dinv += 1*unid;
 					}else{
